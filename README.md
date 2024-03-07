@@ -776,4 +776,11 @@
 </table>
 </div>
     
+### :small_blue_diamond: **在美國由於聖誕節，12月是購物的旺季。探勘分析比較12月與1 ~ 11月的顧客購物行為。有哪些相似的地方，有哪些差異的地方?**
+- 
+    1. 區分1至11月購物資料, 12月購物資料
+    2. 分析相似及差異之處:熱門商店:不管在哪個月, Store ID=12, 8, 19, 13, 17, 21這幾間店皆是顧客最熱門的選擇![](https://github.com/jaifenny/FoodmartDatabase_mining/blob/main/picture/2.png)
 
+    3. December Average Transaction Amount: $14.4 Jan to Nov Average Transaction Amount: $4.05 Average number of customers per month: December = 2689, Jan to Nov = 711  Average number of transactions per month: December = 18325, Jan to Nov = 14959![](https://github.com/jaifenny/FoodmartDatabase_mining/blob/main/picture/1.png)
+
+    4. Top 10 popular products: Moms Roasted Chicken不管在哪一個月都是消費者前10熱門的選擇![](https://github.com/jaifenny/FoodmartDatabase_mining/blob/main/picture/3.png)
