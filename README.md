@@ -160,7 +160,8 @@
 </table>
 </div>
 
-6. 使用lift作為度量標準計算關聯規則, top_10_lift_rules:<div>
+- 
+    6. 使用lift作為度量標準計算關聯規則, top_10_lift_rules:<div>
 
 <table border="1" class="dataframe">
   <thead>
@@ -313,7 +314,8 @@
 </table>
 </div>
 
-7. rule_comparison: 置信度規則著重於條件_結果的關聯程度，而提升規則則著重於關聯規則相對於隨機關聯的提升程度。
+- 
+    7. rule_comparison: 置信度規則著重於條件_結果的關聯程度，而提升規則則著重於關聯規則相對於隨機關聯的提升程度。
  
 ### :small_blue_diamond: **有興趣的資料不只有產品間的資訊，由User Profile 探勘顧客的基本資料。在給定Minimum Support = 0.05 且Minimum Confidence = 0.9 的條件下，探勘Foodmart 顧客基本資料的屬性 {customer_state_province, yearly_income, gender, total_children, num_children_at_home, education, occupation, homeowner} 間的 Association Rules.**
 - 
@@ -459,9 +461,10 @@
 </table>
 </div>
     
-2. 進行one-hot編碼
-3. 使用關聯規則挖掘, metric="confidence", min_threshold=0.9
-4. Top 10 Association Rules:
+- 
+    2. 進行one-hot編碼
+    3. 使用關聯規則挖掘, metric="confidence", min_threshold=0.9
+    4. Top 10 Association Rules:
 <div>
 <table border="1" class="dataframe">
   <thead>
