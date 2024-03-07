@@ -617,5 +617,163 @@
 </table>
 </div>
 
+### :small_blue_diamond: **Foodmart Data 中，顧客背景資料與其交易資料之間的關係 (Quantitative Association Rules)。**
+- 
+    1. 合併顧客背景與交易數據
+    2. 選擇要分析的屬性, selected_columns = ["marital_status", "product_name"]
+    3. 使用fpgrowth演算法找到頻繁項集, Minimum Support = 0. 005
+    4. 使用association_rules函數計算關聯規則, Minimum Confidence = 0.6
+    5. 推測: 買藥物或是日用品者較有可能是已婚狀態，而買食品者較有可能是未婚狀態。
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>antecedents</th>
+      <th>consequents</th>
+      <th>antecedent support</th>
+      <th>consequent support</th>
+      <th>support</th>
+      <th>confidence</th>
+      <th>lift</th>
+      <th>leverage</th>
+      <th>conviction</th>
+      <th>zhangs_metric</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>(product_name_Excellent Cola)</td>
+      <td>(marital_status_S)</td>
+      <td>0.0119</td>
+      <td>0.508845</td>
+      <td>0.0072</td>
+      <td>0.605042</td>
+      <td>1.189050</td>
+      <td>0.001145</td>
+      <td>1.243563</td>
+      <td>0.160907</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>(product_name_Sunset Copper Pot Scrubber)</td>
+      <td>(marital_status_M)</td>
+      <td>0.0125</td>
+      <td>0.491155</td>
+      <td>0.0078</td>
+      <td>0.624000</td>
+      <td>1.270475</td>
+      <td>0.001661</td>
+      <td>1.353311</td>
+      <td>0.215587</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>(product_name_Nationeel Mini Donuts)</td>
+      <td>(marital_status_S)</td>
+      <td>0.0125</td>
+      <td>0.508845</td>
+      <td>0.0076</td>
+      <td>0.608000</td>
+      <td>1.194863</td>
+      <td>0.001239</td>
+      <td>1.252947</td>
+      <td>0.165148</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>(product_name_High Top Garlic)</td>
+      <td>(marital_status_S)</td>
+      <td>0.0113</td>
+      <td>0.508845</td>
+      <td>0.0073</td>
+      <td>0.646018</td>
+      <td>1.269577</td>
+      <td>0.001550</td>
+      <td>1.387513</td>
+      <td>0.214763</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>(product_name_Atomic Semi-Sweet Chocolate Bar)</td>
+      <td>(marital_status_S)</td>
+      <td>0.0093</td>
+      <td>0.508845</td>
+      <td>0.0056</td>
+      <td>0.602151</td>
+      <td>1.183367</td>
+      <td>0.000868</td>
+      <td>1.234525</td>
+      <td>0.156409</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>(product_name_Steady Buffered Aspirin)</td>
+      <td>(marital_status_M)</td>
+      <td>0.0104</td>
+      <td>0.491155</td>
+      <td>0.0063</td>
+      <td>0.605769</td>
+      <td>1.233356</td>
+      <td>0.001192</td>
+      <td>1.290729</td>
+      <td>0.191193</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>(product_name_Blue Label Fancy Canned Oysters)</td>
+      <td>(marital_status_S)</td>
+      <td>0.0117</td>
+      <td>0.508845</td>
+      <td>0.0071</td>
+      <td>0.606838</td>
+      <td>1.192579</td>
+      <td>0.001147</td>
+      <td>1.249242</td>
+      <td>0.163393</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>(product_name_Blue Label Large Canned Shrimp)</td>
+      <td>(marital_status_S)</td>
+      <td>0.0113</td>
+      <td>0.508845</td>
+      <td>0.0068</td>
+      <td>0.601770</td>
+      <td>1.182619</td>
+      <td>0.001050</td>
+      <td>1.233345</td>
+      <td>0.156184</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>(product_name_Jumbo Small Eggs)</td>
+      <td>(marital_status_S)</td>
+      <td>0.0106</td>
+      <td>0.508845</td>
+      <td>0.0066</td>
+      <td>0.622642</td>
+      <td>1.223637</td>
+      <td>0.001206</td>
+      <td>1.301561</td>
+      <td>0.184722</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>(product_name_Hermanos Sweet Onion)</td>
+      <td>(marital_status_S)</td>
+      <td>0.0122</td>
+      <td>0.508845</td>
+      <td>0.0074</td>
+      <td>0.606557</td>
+      <td>1.192028</td>
+      <td>0.001192</td>
+      <td>1.248352</td>
+      <td>0.163083</td>
+    </tr>
+  </tbody>
+</table>
+</div>
     
 
